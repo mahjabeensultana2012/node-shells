@@ -25,6 +25,9 @@ process.stdin.on('data', (data)=>{
     case "cat":
       require('./cat')(arg, prompt);
       break;
+      case "curl":
+      require('./curl')(arg, prompt);
+      break;
     default:
       process.stdout.write('not found');
   }
